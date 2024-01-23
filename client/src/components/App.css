@@ -1,89 +1,80 @@
 .App {
   text-align: center;
-  background-color:burlywood;
+  background: url('../Avitar/Spring.jpg.png') center/cover no-repeat;
   min-height: 100vh;
+  min-width: 80vh;
 }
 
-
-
 .App-header {
-  background-color: rgb(223, 161, 75);
+  background-color: rgb(252, 181, 101);
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(30, 243, 10);
+  text-decoration-color: #e71388;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-/* .nav{ */
-  /* background-color: rgb(10, 65, 62); */
-  /* padding: 0, 5px;
-  width: 2rem;
-  height: 60px;
-  
-} */
-
-@media (min-width: 400px) {
- .nav {
-    flex-direction: row;
-  }
-
+.nav {
+  flex-direction: row;
 }
 
 ul {
   min-width: 0.2em;
-  padding: 2, 5px;
+  padding: 2px 5px;
   list-style: none;
   display: flex;
   flex-direction: row;
-  margin-top: 5px ;
+  margin-top: 10px;
   margin-bottom: 20px;
-  justify-content: left;
+  justify-content: flex-start;
 }
 
+.navlink a {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0066CC;
+  padding: 10px 30px;
+  border: 2px solid #0066cc;
+  box-shadow: 0 0 0 0;
+  border-radius: 50px;
+  display: block;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, padding 0.3s ease-in-out, transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
 
 .navlink a:hover {
-  color: #fff;
+  padding: 10px 50px;
+  transform: translateY(-5px);
+  background-color: #fff;
+  color: #0066cc;
+  border: solid 2px #0066cc;
 }
-.navlink a:active,
-.navlink a.active {
-  color: rgb(255, 51, 0);
-}
-
-
-
-nav a {
-  display: block;
-  background-color: rgb(221, 194, 136);
-  box-shadow: 4px 4px 10px rgba(33, 33, 33, 0.2);
-  padding: 0.5rem 1rem;
-  margin: 0 0.2rem;
-  text-decoration: none;
-  font-size: 1.2em;
-  color: rgb(15, 46, 8);
-  border: 2px solid rgb(192, 3, 183);
-  transition: 0.1s;
-}
-nav a:hover {
-  background-color: rgb(192, 3, 120);
-}
-
 
 button[type="submit"] {
-  border: none;
-  font-size: 1rem;
-  width: 100px;
-  padding: 0.25rem;
-  background-color: rgb(13, 102, 5);
-  color: rgb(247, 223, 223)
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background-color: #250103;
+  padding: 10px 30px;
+  border: 2px solid #250211;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 1s, color 1s, padding 1s, transform 1s, border 1s;
 }
 
+button[type="submit"]:hover {
+  padding: 10px 50px;
+  transform: translateY(-5px);
+  background-color: #fff;
+  color: #330418;
+  border: 2px solid #e71388;
+}
 
 .user_container {
   max-width: 800px;
@@ -91,13 +82,43 @@ button[type="submit"] {
 }
 
 .card {
-  background-color: rgb(113, 168, 175);
+  background-color: rgb(250, 162, 91);
   padding: 16px;
   margin: 16px 0;
   border-radius: 8px;
 }
 
-img{
+img {
   max-height: 60vh;
   margin-top: 10px;
+}
+
+.button-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.button-container button {
+  margin-top: 10px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background-color: #250103;
+  padding: 10px 30px;
+  border: 2px solid #250211;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 1s, color 1s, padding 1s, transform 1s, border 1s;
+}
+
+.button-container button:hover {
+  padding: 10px 50px;
+  transform: translateY(-5px);
+  background-color: #fff;
+  color: #330418;
+  border: 2px solid #e71388;
 }
