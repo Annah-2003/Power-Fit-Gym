@@ -14,7 +14,7 @@ function Home() {
             <Link to = {`/enrolled`}><button type="admin">ADMIN</button></Link>
           </h3>
           <h2>
-          Welcome to FIX'T GYM!
+          Welcome to POWER'F GYM!
           </h2>
           <h5><code>...let's get started</code><h2>
               <Link to = {`/about`}><button>Click Me!</button></Link>
