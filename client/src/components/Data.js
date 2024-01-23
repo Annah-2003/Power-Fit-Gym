@@ -20,4 +20,4 @@ function Data({count, user}) {
   )
 }
 
-// export default Data
+export default Data;
