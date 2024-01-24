@@ -26,6 +26,8 @@ Power Fit Gym is a full-stack developed project aimed at providing users with a 
 
 For the project we:
 1. Created a new GitHub repository
+         https://github.com/Annah-2003/Power-Fit-Gym
+ 
 2. Created our various Branches using the following command:
 
                 git branch <branchname>
@@ -135,8 +137,12 @@ python```
 
 ## Deployment
 This project has been deployed by Netlify(Front end) and Render (Back end)
-The links will direct you to the deployed pages
+The links below  will direct you to the deployed pages
 
+`Netlify Front-end`
+
+
+https://65b0e7d1a4f12e70ebc29b19--ephemeral-syrniki-70ea59.netlify.app/
 
 
 ## License
