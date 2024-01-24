@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(30, 243, 10);
+  color: rgb(102, 13, 20);
   text-decoration-color: #e71388;
 
 }
@@ -37,23 +37,23 @@ ul {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   color: #fff;
-  background-color: #0066CC;
-  padding: 10px 30px;
-  border: 2px solid #0066cc;
+  background-color: #300707;
+  padding: 10px 60px;
+  border: 2px solid #a54461;
   box-shadow: 0 0 0 0;
   border-radius: 50px;
   display: block;
   text-decoration: none;
   margin: 0 0.5rem;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, padding 0.3s ease-in-out, transform 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.3s ease-in-out, padding 0.3s ease-in-out, transform 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .navlink a:hover {
-  padding: 10px 50px;
+  padding: 10px 70px;
   transform: translateY(-5px);
   background-color: #fff;
-  color: #0066cc;
-  border: solid 2px #0066cc;
+  color: #49172f;
+  border: solid 2px #20050c;
 }
 
 button[type="submit"] {
