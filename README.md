@@ -7,7 +7,6 @@ Power Fit Gym is a full-stack developed project aimed at providing users with a 
 ## User Stories
 
 1. As a user, I can easily register on the gym website to access fitness services.
-Personalized Profile
 
 2. As a user, I can create a personalized profile, specifying my fitness goals and preferences.
 
@@ -19,9 +18,25 @@ Personalized Profile
 
 ## Group Members
 
-
+1. Irene Gitau - `Scrum Master`
+2. Mary Shekinah Murega 
+3. Linda Kabugi
 
 ## Project Setup
+
+For the project we:
+1. Created a new GitHub repository
+2. Created our various Branches using the following command:
+
+                git branch <branchname>
+
+Note: The branches are created such that they follow the following convetion:
+
+                MR-<Branch-owner>
+
+
+
+
 Backend (Flask)
 Clone the repository:
 
