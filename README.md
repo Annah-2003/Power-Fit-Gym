@@ -34,48 +34,37 @@ Note: The branches are created such that they follow the following convetion:
 
                 MR-<Branch-owner>
 
+## Backend (Flask)
 
-
-
-Backend (Flask)
-Clone the repository:
-
-
-git clone https://github.com/Moses-Oyelade/power-fit-gym.git
 Navigate to the server directory:
-
-Copy code
 cd server
 Install dependencies:
-bash
-Copy code
-pipenv install
+
+pipenv install 
 Activate virtual environment:
-bash
-Copy code
+
 pipenv shell
 Seed the Database:
-bash
-Copy code
+
 flask db --autogenerate -m "message"
 flask db upgrade
 python seed.py
 Run the Flask app:
-bash
-Copy code
+
+
 python app.py
 Frontend (React)
 Navigate to the client directory:
-bash
-Copy code
+
+
 cd client
 Install dependencies:
-bash
-Copy code
+
+
 npm install
 Run the React app:
-bash
-Copy code
+
+
 npm start
 Dependencies
 Python
@@ -85,9 +74,10 @@ SQLAlchemy
 npm
 Vercel
 Code Samples
-Frontend (React)
-jsx
-Copy code
+
+## Frontend (React)
+
+
 // Example React Component
 import React from 'react';
 
@@ -120,7 +110,8 @@ if __name__ == '__main__':
     app.run(debug=True)
 Deployment
 The project can be deployed using platforms like Vercel for the frontend and Heroku or another suitable service for the backend.
-License
+
+## License
 The content of this site is licensed under the MIT license.
-Copyright © 2023 Moses O. Oyelade.
+`Copyright © 2024`
 
