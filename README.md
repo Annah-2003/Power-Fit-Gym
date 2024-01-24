@@ -101,24 +101,33 @@ Note: The branches are created such that they follow the following convetion:
     ]
 ```
 
-Backend (Flask)
-python
-Copy code
-# Example Flask Route
-from flask import Flask, jsonify
+ ### Backend (Flask)
+python```
+class User(db.Model, SerializerMixin):
+    __tablename__ = 'users'
+    
+    serialize_rules = ('-plans.user',)
+    
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String, nullable=False)
+    gender = db.Column(db.String)
+    age = db.Column(db.Integer)
+    email = db.Column(db.String, nullable=False)
+    phone = db.Column(db.Integer, nullable=False)
+    
+    # Change the backref name from 'user' to 'member'
+    plans = db.relationship('Plan', back_populates='member')
+    
+    def __repr__(self):
+    return f'<User {self.name}, {self.age}, {self.gender}, {self.email}, {self.phone}>'```
 
-app = Flask(__name__)
 
-@app.route('/api/users/<int:user_id>')
-def get_user_profile(user_id):
-    # Fetch user profile from the database
-    user = fetch_user_from_database(user_id)
-    return jsonify(user.to_dict())
 
-if __name__ == '__main__':
-    app.run(debug=True)
-Deployment
-The project can be deployed using platforms like Vercel for the frontend and Heroku or another suitable service for the backend.
+## Deployment
+This project has been deployed by Netlify(Front end) and Render (Back end)
+The links will direct you to the deployed pages
+
+
 
 ## License
 The content of this site is licensed under the MIT license.
