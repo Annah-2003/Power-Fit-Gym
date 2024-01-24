@@ -74,10 +74,10 @@ function RegiForm() {
           onChange={formik.handleChange}
           value={formik.values.name}
           style={{
-            width: "300px", // Set your desired width
-            borderRadius: "10px", // Set rounded corners
-            fontSize: "16px", // Set font size
-            padding: "8px", // Add padding for better appearance
+            width: "300px", 
+            borderRadius: "10px", 
+            fontSize: "16px", 
+            padding: "8px", 
           }}
         />
         <p style={{ color: "red" }}>{formik.errors.name}</p>

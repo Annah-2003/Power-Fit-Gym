@@ -36,62 +36,71 @@ Note: The branches are created such that they follow the following convetion:
 
 ## Backend (Flask)
 
-Navigate to the server directory:
-cd server
-Install dependencies:
+`Navigate to the server directory`:
+            cd server
 
-pipenv install 
-Activate virtual environment:
+`Install dependencies`:
+         pipenv install 
 
-pipenv shell
-Seed the Database:
+`Activate virtual environment`:
+         pipenv shell
 
-flask db --autogenerate -m "message"
-flask db upgrade
-python seed.py
-Run the Flask app:
+`Seed the Database`:
+        flask db --autogenerate -m "message"
+        flask db upgrade
+        python seed.py
 
+`Run the Flask app`:
+         python app.py
 
-python app.py
-Frontend (React)
-Navigate to the client directory:
-
-
-cd client
-Install dependencies:
-
-
-npm install
-Run the React app:
-
-
-npm start
-Dependencies
-Python
-Flask
-React.js
-SQLAlchemy
-npm
-Vercel
-Code Samples
 
 ## Frontend (React)
 
+`Navigate to the client directory`:
+        cd client
 
-// Example React Component
-import React from 'react';
+`Install dependencies`:
+        npm install
 
-const UserProfile = ({ user }) => {
-  return (
-    <div>
-      <h2>{user.name}'s Profile</h2>
-      <p>Fitness Goals: {user.fitnessGoals}</p>
-      {/* Additional Profile Information */}
-    </div>
-  );
-};
+`Run the React app`:
+        npm start
 
-export default UserProfile;
+### Dependencies
+1. Python
+2. Flask
+3. React.js
+4. SQLAlchemy
+5. npm
+
+## Code Samples
+
+## Frontend (React)
+
+`// components folder`
+```import { useState } from "react";
+    import { Link } from "react-router-dom";
+
+   function Form({ userId, onAddPlan }) {
+  const [planName, setPlanName] = useState("");
+  const [packageList, setPackageList] = useState("");
+  const [formErrors, setFormErrors] = useState([]);
+  const [refreshPage, setRefreshPage] = useState(false);
+
+  const packages = [
+    "Strength, Circuit training, Swimming,  Dance, Kick bocking",
+    "Burpee, Aerobic exercise, Yoga, Walking, Aerobics",
+    "Stretching, Plank, Skipping rope, Pilates, Cycling",
+    "Running, Squats, Lunge, Interval training, Rowing",
+    "Push_up, High-intensity interval training, Hiking, Weightlifting",] }
+    const planType = [
+    "Basic",
+    "Jungle",
+    "Premium",
+    "Pro-max",
+    "Master",
+    ]
+```
+
 Backend (Flask)
 python
 Copy code
