@@ -37,15 +37,19 @@ Note: The branches are created such that they follow the following convetion:
 ## Backend (Flask)
 
 `Navigate to the server directory`:
+
             cd server
 
 `Install dependencies`:
+
          pipenv install 
 
 `Activate virtual environment`:
+
          pipenv shell
 
 `Seed the Database`:
+
         flask db --autogenerate -m "message"
         flask db upgrade
         python seed.py
@@ -57,12 +61,15 @@ Note: The branches are created such that they follow the following convetion:
 ## Frontend (React)
 
 `Navigate to the client directory`:
+
         cd client
 
 `Install dependencies`:
+
         npm install
 
 `Run the React app`:
+
         npm start
 
 ### Dependencies
@@ -77,7 +84,10 @@ Note: The branches are created such that they follow the following convetion:
 ## Frontend (React)
 
 `// components folder`
-```import { useState } from "react";
+
+
+``` 
+    import { useState } from "react";
     import { Link } from "react-router-dom";
 
    function Form({ userId, onAddPlan }) {
@@ -103,7 +113,7 @@ Note: The branches are created such that they follow the following convetion:
 
  ### Backend (Flask)
 python```
-class User(db.Model, SerializerMixin):
+    class User(db.Model, SerializerMixin):
     __tablename__ = 'users'
     
     serialize_rules = ('-plans.user',)
