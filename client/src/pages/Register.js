@@ -12,8 +12,8 @@ function Register() {
 
   return (
     <>
-      <div className="text-white">
-        <h4>Register and become Enrolled</h4>
+      <div className="register">
+        <h2>Register To Be Enrolled</h2>
         <RegiForm />
       </div>
     </>

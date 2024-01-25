@@ -34,25 +34,26 @@ function About() {
 
   return (
     <div>
-      <h1 className="text-primary">Our Instructors</h1>
+      <h1 className="heading">Our Instructors</h1>
 
       <section className="user_container">
-        <div key={result.id} className="card bg-light p-3">
+        <div key={result.id} className="card bg-light p-3" id="about-body">
+          <Link  className="close" to="/">X</Link>
           <h3>({index + 1} of {results.length})</h3>
           <h2 className="bg-info text-white p-2 rounded">{result.name}</h2>
           <h5>Gender: {result.gender}</h5>
           <h5>Level: {result.level}</h5>
           <div className="d-flex justify-content-between">
-            <button className="btn btn-primary" onClick={handlePrevClick}>
+            <button id="about-btn" className="btn btn-primary" onClick={handlePrevClick}>
               Previous
             </button>
-            <button className="btn btn-primary" onClick={handleNextClick}>
+            <button id="about-btn" className="btn btn-primary" onClick={handleNextClick}>
               Next
             </button>
           </div>
           <p>
             <Link to="/register">
-              <button className="btn btn-success">Click here to Register</button>
+              <button id="about-btn"  className="btn btn-success">Click here to Register</button>
             </Link>
           </p>
         </div>

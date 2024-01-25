@@ -58,13 +58,13 @@ function RegiForm() {
   });
 
   return (
-    <div>
-      <Link to={"/about"}>
-        <button>Back</button>
+    <div className="bg-light p-3 m-auto col-md-6 rounded">
+      <Link className="btn-back" to={"/"}>
+        Back
       </Link>
-      <h1>User sign up form</h1>
+      <h1 className="register-heading">User sign up form</h1>
       <form onSubmit={formik.handleSubmit} style={{ margin: "30px" }}>
-        <label htmlFor="name" className="text-white">
+        <label htmlFor="name" className="register-label">
           Name
         </label>
         <br />
@@ -75,14 +75,14 @@ function RegiForm() {
           value={formik.values.name}
           style={{
             width: "300px", 
-            borderRadius: "10px", 
-            fontSize: "16px", 
-            padding: "8px", 
+            borderRadius: "5px", 
+            fontSize: "small", 
+            padding: "4px", 
           }}
         />
         <p style={{ color: "red" }}>{formik.errors.name}</p>
 
-        <label htmlFor="gender" className="text-white">
+        <label htmlFor="gender" className="register-label">
           Gender
         </label>
         <br />
@@ -93,14 +93,14 @@ function RegiForm() {
           value={formik.values.gender}
           style={{
             width: "300px",
-            borderRadius: "10px",
-            fontSize: "16px",
-            padding: "8px",
+            borderRadius: "5px",
+            fontSize: "small",
+            padding: "4px",
           }}
         />
         <p style={{ color: "red" }}>{formik.errors.gender}</p>
 
-        <label htmlFor="age" className="text-white">
+        <label htmlFor="age" className="register-label">
           Age (16+)
         </label>
         <br />
@@ -111,14 +111,14 @@ function RegiForm() {
           value={formik.values.age}
           style={{
             width: "300px",
-            borderRadius: "10px",
-            fontSize: "16px",
-            padding: "8px",
+            borderRadius: "5px",
+            fontSize: "small",
+            padding: "4px",
           }}
         />
         <p style={{ color: "red" }}>{formik.errors.age}</p>
 
-        <label htmlFor="email" className="text-white">
+        <label htmlFor="email" className="register-label">
           Email Address
         </label>
         <br />
@@ -129,14 +129,14 @@ function RegiForm() {
           value={formik.values.email}
           style={{
             width: "300px",
-            borderRadius: "10px",
-            fontSize: "16px",
-            padding: "8px",
+            borderRadius: "5px",
+            fontSize: "small",
+            padding: "4px",
           }}
         />
         <p style={{ color: "red" }}>{formik.errors.email}</p>
 
-        <label htmlFor="phone" className="text-white">
+        <label htmlFor="phone" className="register-label">
           Phone no.
         </label>
         <br />
@@ -147,9 +147,9 @@ function RegiForm() {
           value={formik.values.phone}
           style={{
             width: "300px",
-            borderRadius: "10px",
-            fontSize: "16px",
-            padding: "8px",
+            borderRadius: "5px",
+            fontSize: "small",
+            padding: "4px",
           }}
         />
         <p style={{ color: "red" }}>{formik.errors.phone}</p>

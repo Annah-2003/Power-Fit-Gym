@@ -97,7 +97,7 @@ const planType = [
           <button type="submit">Add Plan</button>
         </p>
         <p>
-          <Link to = {`/enrolled`}><button type="Cancel">Back</button></Link>
+          <Link to = {`/enrolled`}><button type="Cancel" className="delete">Back</button></Link>
         </p>
       
     </form>

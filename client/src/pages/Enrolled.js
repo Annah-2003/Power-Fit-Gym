@@ -27,7 +27,7 @@ function Enrolled() {
   }
 
   return (
-    <>
+    <div className="enrolled">
         <h2>Enrolled Info</h2>
         <section className="user_container">
         {users.map((user) => (
@@ -38,11 +38,11 @@ function Enrolled() {
             <h5>Gender: {user.gender}</h5>
             <h5>E-mail: {user.email}</h5>
             <p>Subcription:{user.plans}</p>
-            <button onClick={() => handleDelete(user.id)}>Delete</button>
+            <button className="delete" onClick={() => handleDelete(user.id)}>Delete</button>
           </div>
         ))}
         </section>    
-    </>
+    </div>
   )
 }
 
