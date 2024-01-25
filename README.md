@@ -30,7 +30,7 @@ For the project we:
  
 2. Created our various Branches using the following command:
 
-                git branch <branchname>
+         git branch <branchname>
 
 Note: The branches are created such that they follow the following convetion:
 
@@ -139,15 +139,10 @@ python
 
 
 ## Deployment
-This project has been deployed by Netlify(Front end) and Render (Back end)
-The links below  will direct you to the deployed pages
-
-`Netlify Front-end`
+This project has been deployed 
+The links below  will direct you to the deployed page
 
 https://65b1fd811555b42c5c32ae4f--unique-cocada-223555.netlify.app/
-
-
-`Render Back-End`
 
 
 
