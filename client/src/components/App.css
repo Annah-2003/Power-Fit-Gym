@@ -1,36 +1,48 @@
 .App {
   text-align: center;
-  background: url('../Avitar/Spring.jpg.png') center/cover no-repeat;
+  background-color: #000;
   min-height: 100vh;
   min-width: 80vh;
 }
 
-.App-header {
+.body{
+  background-color: #000;
+}
+
+nav {
   background-color: rgb(252, 181, 101);
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(102, 13, 20);
   text-decoration-color: #e71388;
-
+  padding: 2px;
 }
 
-.nav {
-  flex-direction: row;
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-ul {
+.menu-items {
   min-width: 0.2em;
-  padding: 2px 5px;
   list-style: none;
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
-  margin-bottom: 20px;
   justify-content: flex-start;
+  margin-right: 30px;
+}
+
+.menu-items li {
+  margin-left: 20px;
+}
+
+.menu-items li a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+ul li a:hover{
+  color:#e71388;
 }
 
 .navlink a {
@@ -54,6 +66,113 @@ ul {
   background-color: #fff;
   color: #49172f;
   border: solid 2px #20050c;
+}
+
+.heading{
+  text-align: center;
+  font-size: large;
+  color: #fff;
+  margin-top: 50px;
+}
+
+#about-body h3{
+  font-size: medium;
+}
+
+#about-body h2{
+  font-size: large;
+}
+
+#about-body h5{
+  font-size: small;
+}
+
+#about-btn {
+  padding: 5px;
+  font-size: small;
+}
+
+.close{
+  display: flex;
+  justify-content:flex-end;
+  text-decoration: none;
+  color: red;
+}
+
+.register h2{
+  color: white;
+  font-size: medium;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.btn-back{
+  border: 1px solid red;
+  color: white;
+  background-color: red;
+  font-size: x-small;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: left;
+  width: 32px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.delete {
+  border: 1px solid red;
+  color: white;
+  background-color: red;
+  font-size: x-small;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-heading{
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.register-label{
+  font-size: smaller;
+}
+
+.enrolled {
+  min-height: 100vh;
+  background-color: #000;
+  padding: 5px;
+}
+
+.enrolled h2{
+  color: #fff;
+  margin-top: 15px;
+  font-size: medium;
+}
+
+.enrolled h5, p{
+  font-size: small;
+}
+
+.card p{
+  font-size: small;
+  margin:0;
+  padding: 0;
+}
+
+.card h1{
+  font-size: large;
+}
+
+.card h3{
+  font-size: small;
 }
 
 button[type="submit"] {
