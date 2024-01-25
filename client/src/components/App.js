@@ -6,22 +6,25 @@ import Navbar from "./Navbar";
 import Display from './Display';
 import Enrolled from "../pages/Enrolled";
 import './App.css'
+import NewNav from "./Navbar";
 
 function App() {
 
   return (
     <>
       <div className="App">
-      <header className="App-header">
-      <Navbar />
-      </header>
-      <Routes className="App">
-          <Route path="/about" element={ <About/> } />
-          <Route path="/enrolled" element={ <Enrolled/> } />
-          <Route path="/register" element={ <Register/> } />
-          <Route path="/users/:id" element={ <Display/>} />
-          <Route path="/" element = { <Home/> } />
-      </Routes>
+        <NewNav />
+
+        <div className="body">
+        <Routes>
+            <Route path="/about" element={ <About/> } />
+            <Route path="/enrolled" element={ <Enrolled/> } />
+            <Route path="/register" element={ <Register/> } />
+            <Route path="/users/:id" element={ <Display/>} />
+            <Route path="/" element = { <Home/> } />
+        </Routes>
+        </div>
+      
       </div>
     </>
       
