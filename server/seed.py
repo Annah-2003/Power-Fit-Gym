@@ -7,11 +7,11 @@ from models import User, Instructor, Plan
 genders = ["Male", "Female"]
 
 packages = [
-    "Strength, Circuit training, Swimming, Dance, Kick bocking",
+    "Strength, Circuit training, Swimming, Dance, Kick boxing",
     "Burpee, Aerobic exercise, Yoga, Walking, Aerobics",
     "Stretching, Plank, Skipping rope, Pilates, Cycling",
     "Running, Squats, Lunge, Interval training, Rowing",
-    "Push_up, High-intensity interval training, Hiking, Weightlifting",
+    "Push-up, High-intensity interval training, Hiking, Weightlifting",
 ]
 
 plan_names = ["Basic", "Jungle", "Premium", "Pro-max", "Master"]
@@ -47,7 +47,7 @@ with app.app_context():
     db.session.add_all(plans)
 
     instructors = []
-    for i in range(randint(1, 8)):
+    while len(instructors) < 10:
         ins = Instructor(
             name=fake.name(),
             gender=rc(genders),
