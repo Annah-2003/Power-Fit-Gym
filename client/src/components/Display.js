@@ -44,8 +44,7 @@ function Display() {
 
   return (
     <>
-    <div>
-      <h2>Display</h2>
+    <div className="Display">
         <section className="user_container">
       <div className="card">
         <h1>{user.name}</h1>
