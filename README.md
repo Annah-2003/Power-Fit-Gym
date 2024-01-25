@@ -26,7 +26,7 @@ Power Fit Gym is a full-stack developed project aimed at providing users with a 
 
 For the project we:
 1. Created a new GitHub repository
-         https://github.com/Annah-2003/Power-Fit-Gym
+        https://github.com/Annah-2003/Power-Fit-Gym
  
 2. Created our various Branches using the following command:
 
@@ -38,25 +38,26 @@ Note: The branches are created such that they follow the following convetion:
 
 ## Backend (Flask)
 
-`Navigate to the server directory`:
+`Navigate to the server directory`
 
             cd server
 
-`Install dependencies`:
+`Install dependencies`
 
          pipenv install 
 
-`Activate virtual environment`:
+`Activate virtual environment`
 
          pipenv shell
 
-`Seed the Database`:
+`Seed the Database`
 
         flask db --autogenerate -m "message"
         flask db upgrade
         python seed.py
 
-`Run the Flask app`:
+`Run the Flask app`
+
          python app.py
 
 
@@ -114,7 +115,9 @@ Note: The branches are created such that they follow the following convetion:
 ```
 
  ### Backend (Flask)
-python```
+python
+    ```
+
     class User(db.Model, SerializerMixin):
     __tablename__ = 'users'
     
