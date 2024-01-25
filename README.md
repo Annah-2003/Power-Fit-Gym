@@ -141,11 +141,15 @@ The links below  will direct you to the deployed pages
 
 `Netlify Front-end`
 
+https://65b1fd811555b42c5c32ae4f--unique-cocada-223555.netlify.app/
 
-https://65b0e7d1a4f12e70ebc29b19--ephemeral-syrniki-70ea59.netlify.app/
+
+`Render Back-End`
+
 
 
 ## License
 The content of this site is licensed under the MIT license.
+
 `Copyright © 2024`
 
