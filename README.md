@@ -144,7 +144,7 @@ The links below  will direct you to the deployed page
 
 Frontend
 
-https://65b1fd811555b42c5c32ae4f--unique-cocada-223555.netlify.app/
+https://65b676634d919a70c4bf53ae--vocal-fenglisu-dcc1e1.netlify.app/
 
 Backend
 
