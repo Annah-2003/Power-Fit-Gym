@@ -6,16 +6,15 @@ db = SQLAlchemy()
 class User(db.Model, SerializerMixin):
     __tablename__ = 'users'
     
-    serialize_rules = ('-plans.user',)
-    
+    serialize_rules = ('-plans.member',)
+
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, nullable=False)
     gender = db.Column(db.String)
     age = db.Column(db.Integer)
-    email = db.Column(db.String, nullable=False)
-    phone = db.Column(db.Integer, nullable=False)
-    
-    # Change the backref name from 'user' to 'member'
+    email = db.Column(db.String, nullable=False, unique=True)
+    phone = db.Column(db.String, nullable=False, unique=True)
+
     plans = db.relationship('Plan', back_populates='member')
     
     def __repr__(self):
@@ -46,7 +45,7 @@ class Instructor(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, nullable=False)
     gender = db.Column(db.String)
-    level = db.Column(db.String)
+    level = db.Column(db.Integer)  # Assuming level is an integer
 
     plans = db.relationship('Plan', back_populates='instructor')
 

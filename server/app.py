@@ -1,10 +1,12 @@
+import os
 from flask import Flask, request, jsonify, make_response
 from flask_migrate import Migrate
 from models import db, User, Plan, Instructor
 
 app =Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
+    'DATABASE_URI', 'postgresql://user:cCuTqpLrwUFEgOEa0jNiqoCdHQYevka6@dpg-cmpvm0gl5elc73fs5d1g-a.oregon-postgres.render.com/gymdb_a3cw')
 app.config['SQLALCHEMY_TRACK_MODOFICATIONS'] = False
 app.json.compact = False
 

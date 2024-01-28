@@ -31,7 +31,7 @@ with app.app_context():
             gender=rc(genders),
             age=randint(17, 70),
             email=fake.email(),
-            phone=fake.numerify('081-###-####'),
+            phone=fake.numerify('081########'),
         )
         users.append(u)
     db.session.add_all(users)

@@ -10,6 +10,10 @@ pipenv = "*"
 shell = "*"
 sqlalchemy-serializer = "*"
 flask-migrate = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+flask-sqlalchemy = "*"
+flask-restful = "*"
 
 [dev-packages]
 
