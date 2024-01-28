@@ -142,12 +142,14 @@ python
 This project has been deployed 
 The links below  will direct you to the deployed page
 
+Frontend
+```
 https://65b1fd811555b42c5c32ae4f--unique-cocada-223555.netlify.app/
-
+```
 Backend
-
-https://gym-xg82.onrender.com
-
+```
+https://gym-sw51.onrender.com
+```
 
 ## License
 The content of this site is licensed under the MIT license.
